@@ -9,5 +9,7 @@ package Modelo;
  * @author Jesus
  */
 public class Sala {
+    public Jugador[] jugadores;
+    public Partida partida;
     
 }

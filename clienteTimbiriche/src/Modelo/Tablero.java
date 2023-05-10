@@ -9,5 +9,33 @@ package Modelo;
  * @author Jesus
  */
 public class Tablero {
+    protected int tamanioTablero;
+    protected int[][] puntos;
+    protected boolean cuadroCompleto;
+
+    public int getTamanioTablero() {
+        return tamanioTablero;
+    }
+
+    public void setTamanioTablero(int tamanioTablero) {
+        this.tamanioTablero = tamanioTablero;
+    }
+
+    public int[][] getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(int[][] puntos) {
+        this.puntos = puntos;
+    }
+
+    public boolean isCuadroCompleto() {
+        return cuadroCompleto;
+    }
+
+    public void setCuadroCompleto(boolean cuadroCompleto) {
+        this.cuadroCompleto = cuadroCompleto;
+    }
+    
     
 }
