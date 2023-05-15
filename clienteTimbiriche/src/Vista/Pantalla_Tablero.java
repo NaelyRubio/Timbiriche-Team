@@ -109,11 +109,6 @@ public class TableroGUI extends JFrame {
         imgPlayer4 = new javax.swing.JLabel();
         ptsPlayer4 = new javax.swing.JLabel();
         otroPlayer4 = new javax.swing.JLabel();
-        pnlCuantos = new javax.swing.JPanel();
-        lblCuantos = new javax.swing.JLabel();
-        btnCuantos2 = new javax.swing.JButton();
-        btnCuantos3 = new javax.swing.JButton();
-        btnCuantos4 = new javax.swing.JButton();
         btnListo = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -358,62 +353,6 @@ public class TableroGUI extends JFrame {
                 .addContainerGap())
         );
 
-        pnlCuantos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        lblCuantos.setText("Número de jugadores:");
-
-        btnCuantos2.setText("2");
-        btnCuantos2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCuantos2ActionPerformed(evt);
-            }
-        });
-
-        btnCuantos3.setText("3");
-        btnCuantos3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCuantos3ActionPerformed(evt);
-            }
-        });
-
-        btnCuantos4.setText("4");
-        btnCuantos4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCuantos4ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnlCuantosLayout = new javax.swing.GroupLayout(pnlCuantos);
-        pnlCuantos.setLayout(pnlCuantosLayout);
-        pnlCuantosLayout.setHorizontalGroup(
-            pnlCuantosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCuantosLayout.createSequentialGroup()
-                .addGroup(pnlCuantosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlCuantosLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(btnCuantos2)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnCuantos3)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnCuantos4))
-                    .addGroup(pnlCuantosLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(lblCuantos)))
-                .addGap(42, 42, 42))
-        );
-        pnlCuantosLayout.setVerticalGroup(
-            pnlCuantosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCuantosLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(lblCuantos)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(pnlCuantosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCuantos2)
-                    .addComponent(btnCuantos3)
-                    .addComponent(btnCuantos4))
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-
         btnListo.setText("Estoy listo!");
         btnListo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -431,15 +370,11 @@ public class TableroGUI extends JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(pnlPlayer1, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
-                                .addComponent(pnlPlayer3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
-                                .addComponent(pnlPlayer4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
-                                .addComponent(pnlPlayer2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(pnlCuantos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(pnlPlayer1, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+                            .addComponent(pnlPlayer3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+                            .addComponent(pnlPlayer4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+                            .addComponent(pnlPlayer2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(265, 265, 265))
                     .addComponent(btnListo, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
@@ -456,12 +391,10 @@ public class TableroGUI extends JFrame {
                         .addComponent(pnlPlayer3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(pnlPlayer4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pnlCuantos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
+                        .addGap(258, 258, 258)
                         .addComponent(btnListo))
                     .addComponent(pnlFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 656, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -474,18 +407,6 @@ public class TableroGUI extends JFrame {
     private void clrPlayer3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clrPlayer3MouseClicked
         
     }//GEN-LAST:event_clrPlayer3MouseClicked
-
-    private void btnCuantos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuantos2ActionPerformed
-       
-    }//GEN-LAST:event_btnCuantos2ActionPerformed
-
-    private void btnCuantos3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuantos3ActionPerformed
-        
-    }//GEN-LAST:event_btnCuantos3ActionPerformed
-
-    private void btnCuantos4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuantos4ActionPerformed
-       
-    }//GEN-LAST:event_btnCuantos4ActionPerformed
 
     private void btnListoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListoActionPerformed
         
@@ -506,9 +427,6 @@ public class TableroGUI extends JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCuantos2;
-    private javax.swing.JButton btnCuantos3;
-    private javax.swing.JButton btnCuantos4;
     private javax.swing.JToggleButton btnListo;
     private javax.swing.JLabel clrPlayer1;
     private javax.swing.JLabel clrPlayer2;
@@ -518,12 +436,10 @@ public class TableroGUI extends JFrame {
     private javax.swing.JLabel imgPlayer2;
     private javax.swing.JLabel imgPlayer3;
     private javax.swing.JLabel imgPlayer4;
-    private javax.swing.JLabel lblCuantos;
     private javax.swing.JLabel otroPlayer1;
     private javax.swing.JLabel otroPlayer2;
     private javax.swing.JLabel otroPlayer3;
     private javax.swing.JLabel otroPlayer4;
-    private javax.swing.JPanel pnlCuantos;
     private javax.swing.JPanel pnlFondo;
     private javax.swing.JPanel pnlPlayer1;
     private javax.swing.JPanel pnlPlayer2;
