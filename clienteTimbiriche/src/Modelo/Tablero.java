@@ -4,46 +4,45 @@
  */
 package Modelo;
 
+import java.awt.Color;
+
 /**
  *
  * @author Jesus
  */
 public class Tablero {
-    protected int tamanioTablero;
-    protected int puntos[][];
-    protected boolean cuadroCompleto;
 
-    public int getTamanioTablero() {
-        return tamanioTablero;
+    private int filas;
+    private int columnas;
+    private int[][] jugadas;
+    boolean cuadroCompleto;
+
+    public Tablero(int filas, int columnas) {
+        this.filas = filas;
+        this.columnas = columnas;
+        jugadas = new int[filas][columnas];
     }
 
-    public void setTamanioTablero(int tamanioTablero) {
-        this.tamanioTablero = tamanioTablero;
+
+    public void realizarJugada(int fila, int columna, Jugador jugador) {
+        jugadas[fila][columna] = jugador.getId();
     }
 
-    public int[][] getPuntos() {
-        return puntos;
+    public boolean hayJugadaEn(int fila, int columna) {
+        return jugadas[fila][columna] != 0;
     }
 
-    public void setPuntos(int[][] puntos) {
-        this.puntos = puntos;
+    public Jugador obtenerJugadorJugada(int fila, int columna, Jugador[] jugadores) {
+        int jugadorId = jugadas[fila][columna];
+        return jugadores[jugadorId - 1];
     }
 
-    public boolean isCuadroCompleto() {
-        return cuadroCompleto;
+    // Otros métodos y atributos de la clase Tablero...
+    public int getFilas() {
+        return filas;
     }
 
-    public void setCuadroCompleto(boolean cuadroCompleto) {
-        this.cuadroCompleto = cuadroCompleto;
+    public int getColumnas() {
+        return columnas;
     }
-
-    boolean hayJugadaEn(int fila, int columna) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    void realizarJugada(int fila, int columna, Jugador jugadorActual) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
 }

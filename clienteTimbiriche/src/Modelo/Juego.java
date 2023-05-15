@@ -20,12 +20,19 @@ import java.awt.List;
     private Jugador jugadorActual;
 
     public Juego() {
-        tablero = new Tablero();
         jugador1 = new Jugador("Jugador 1");
         jugador2 = new Jugador("Jugador 2");
         jugadorActual = jugador1;
     }
 
+    public Juego(Tablero tablero, Jugador jugador1, Jugador jugador2, Jugador jugadorActual) {
+        this.tablero = tablero;
+        this.jugador1 = jugador1;
+        this.jugador2 = jugador2;
+        this.jugadorActual = jugadorActual;
+    }
+
+    
     public void realizarJugada(int fila, int columna) {
         if (tablero.hayJugadaEn(fila, columna)) {
             // Si ya hay una jugada en la posición seleccionada, no hacer nada
