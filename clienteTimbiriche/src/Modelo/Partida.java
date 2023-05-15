@@ -4,27 +4,25 @@
  */
 package Modelo;
 
+
 import java.util.ArrayList;
+
 
 /**
  *
  * @author Jesus
  */
-public class Partida {
+public class Partida{
     private ArrayList<Jugador> jugadores;
     private int jugadoresListos;
     private Tablero tablero;
     
-    public void iniciarJuego(){
-        while(jugadoresListos<jugadores.size()){
-            
-        }
+    public boolean iniciarJuego(){
+        return jugadoresListos==jugadores.size();
     }
     
-    public void finalizarJuego(){
-        if (tablero.cuadroCompleto==true) {
-            
-        }
+    public boolean finalizarJuego(){
+        return tablero.cuadroCompleto==true;
     }
     
     public void agregarJugador(Jugador jugadorNuevo){
@@ -46,4 +44,6 @@ public class Partida {
             }
         }
     }
+
+    
 }

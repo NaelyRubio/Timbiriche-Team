@@ -9,7 +9,13 @@ package Modelo;
  * @author Jesus
  */
 public class Sala {
-    public Jugador[] jugadores;
+    public Jugador jugadores[];
     public Partida partida;
     
+    public void seleccionarListo(Jugador jugador,int opcion){
+        if (opcion==1) {
+          jugador.setEstado("Listo");  
+        }
+        
+    }
 }

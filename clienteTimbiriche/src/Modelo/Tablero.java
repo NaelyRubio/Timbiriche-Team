@@ -10,7 +10,7 @@ package Modelo;
  */
 public class Tablero {
     protected int tamanioTablero;
-    protected int[][] puntos;
+    protected int puntos[][];
     protected boolean cuadroCompleto;
 
     public int getTamanioTablero() {
