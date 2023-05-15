@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Jesus/Documents/NetBeansProjects/timbiriche%20team/Timbiriche-Team/clienteTimbiriche/src/Modelo/Partida.java</file>
-            <file>file:/C:/Users/Jesus/Documents/NetBeansProjects/timbiriche%20team/Timbiriche-Team/clienteTimbiriche/src/Vista/Pantalla_UnirsePartida.java</file>
-            <file>file:/C:/Users/Jesus/Documents/NetBeansProjects/timbiriche%20team/Timbiriche-Team/clienteTimbiriche/src/Vista/PantallaGanador.java</file>
-            <file>file:/C:/Users/Jesus/Documents/NetBeansProjects/timbiriche%20team/Timbiriche-Team/clienteTimbiriche/src/Modelo/Cuadro.java</file>
-            <file>file:/C:/Users/Jesus/Documents/NetBeansProjects/timbiriche%20team/Timbiriche-Team/clienteTimbiriche/src/Modelo/Jugador.java</file>
-            <file>file:/C:/Users/Jesus/Documents/NetBeansProjects/timbiriche%20team/Timbiriche-Team/clienteTimbiriche/src/Modelo/Movimiento.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Modelo/Cuadro.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Vista/Pantalla_SalaDeEspera.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Controlador/Socket_Cliente.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Vista/Pantalla_NuevaPartida.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Vista/Pantalla_UnirsePartida.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Vista/Pantalla_Tablero.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Vista/PantallaGanador.java</file>
+            <file>file:/C:/Users/naely/Downloads/Itson/6to%20Semestre/Arquitectura/arquis/Timbiriche-Team/clienteTimbiriche/src/Vista/Pantalla_Inicio.java</file>
         </group>
     </open-files>
 </project-private>

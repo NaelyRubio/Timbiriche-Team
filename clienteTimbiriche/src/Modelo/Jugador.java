@@ -4,56 +4,37 @@
  */
 package Modelo;
 
+import java.awt.Color;
+
 /**
  *
  * @author Jesus
  */
 public class Jugador {
+
     private String nombre;
-    private String color;
-    private int puntuaje;
-    private boolean turno;
-    private String estado;
+    private Color color;
+    private int puntuacion;
+
+    public Jugador(String nombre) {
+        this.nombre = nombre;
+        this.color = color;
+        this.puntuacion = 0;
+    }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public int getPuntuacion() {
+        return puntuacion;
     }
 
-    public int getPuntuaje() {
-        return puntuaje;
+    public void aumentarPuntuacion() {
+        puntuacion++;
     }
-
-    public void setPuntuaje(int puntuaje) {
-        this.puntuaje = puntuaje;
-    }
-
-    public boolean isTurno() {
-        return turno;
-    }
-
-    public void setTurno(boolean turno) {
-        this.turno = turno;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-    
-    
 }

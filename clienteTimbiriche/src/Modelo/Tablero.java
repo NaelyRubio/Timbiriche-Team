@@ -36,6 +36,14 @@ public class Tablero {
     public void setCuadroCompleto(boolean cuadroCompleto) {
         this.cuadroCompleto = cuadroCompleto;
     }
+
+    boolean hayJugadaEn(int fila, int columna) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void realizarJugada(int fila, int columna, Jugador jugadorActual) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }
