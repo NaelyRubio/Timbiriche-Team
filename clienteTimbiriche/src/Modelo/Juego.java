@@ -4,6 +4,7 @@
  */
 package Modelo;
 
+import Vista.Pantalla_Inicio;
 import java.awt.Color;
 import java.awt.List;
 
@@ -19,7 +20,7 @@ import java.awt.List;
     private Jugador jugador2;
     private Jugador jugadorActual;
 
-    public Juego() {
+    public Juego(boolean par, Pantalla_Inicio aThis) {
         jugador1 = new Jugador("Jugador 1");
         jugador2 = new Jugador("Jugador 2");
         jugadorActual = jugador1;
@@ -61,6 +62,10 @@ import java.awt.List;
 
     public Jugador getJugadorActual() {
         return jugadorActual;
+    }
+
+    public void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 

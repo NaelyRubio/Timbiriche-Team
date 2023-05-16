@@ -26,8 +26,7 @@ public class Partida{
         this.jugadoresListos = jugadoresListos;
         this.tablero = tablero;
     }
-    
-    
+   
     
     public boolean iniciarJuego(){
         return jugadoresListos==jugadores.size();

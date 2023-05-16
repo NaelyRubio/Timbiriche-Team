@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import Modelo.Juego;
+
 /**
  *
  * @author Jesus
@@ -73,9 +75,9 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        Pantalla_NuevaPartida np= new Pantalla_NuevaPartida(this, false);
-        np.setVisible(true);
-        
+         Juego partida = new Juego(true, this);
+        this.setVisible(false);
+        partida.setVisible(true);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed

@@ -11,14 +11,15 @@ import Modelo.Tablero;
  * @author Jesus
  */
 public class InteraccionTablero {
+    
     public int setTamTablero(int opcion){
         switch (opcion){
             case 0:
                 return 10;
             case 1:
-                return 20;
+                return 15;
             case 2:
-                return 30;
+                return 20;
         }
         return 0;
                 

@@ -4,38 +4,37 @@
  */
 package Modelo;
 
-import java.awt.List;
 import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author Jesus
- */
+public class SalaDeEspera {
+    private List<Jugador> jugadores;
+    private boolean partidaIniciada;
 
-//public class SalaDeEspera {
-  
-//    private List<Jugador> jugadores;
-//
-//    public SalaDeEspera() {
-//        jugadores = new ArrayList<>();
-//    }
-//
-//    public void agregarJugador(Jugador jugador) {
-//        jugadores.add(jugador);
-//    }
-//
-//    public void removerJugador(Jugador jugador) {
-//        jugadores.remove(jugador);
-//    }
-//
-//    public List<Jugador> getJugadores() {
-//        return jugadores;
-//    }
-//
-//    public int getCantidadJugadores() {
-//        return jugadores.size();
-//    }
-//}
+    public SalaDeEspera() {
+        this.jugadores = new ArrayList<>();
+        this.partidaIniciada = false;
+    }
+
+    public synchronized void agregarJugador(Jugador jugador) {
+        jugadores.add(jugador);
+        if (jugadores.size() >= 2 && !partidaIniciada) {
+            partidaIniciada = true;
+            iniciarPartida();
+        }
+    }
+
+    public synchronized void removerJugador(Jugador jugador) {
+        jugadores.remove(jugador);
+    }
+
+    private void iniciarPartida() {
+        // Lógica para iniciar la partida
+        System.out.println("¡La partida ha comenzado!");
+    }
+}
+
+
 
     
 
