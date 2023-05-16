@@ -4,6 +4,10 @@
  */
 package Vista;
 
+import Controlador.InteraccionTablero;
+import Modelo.Tablero;
+
+
 /**
  *
  * @author Jesus
@@ -12,11 +16,17 @@ public class Pantalla_NuevaPartida extends javax.swing.JDialog {
 
     /**
      * Creates new form Pantalla_NuevaPartida
+     * @param parent
+     * @param modal
      */
     public Pantalla_NuevaPartida(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        
         initComponents();
     }
+    
+    InteraccionTablero it=  new InteraccionTablero();
+    Tablero nuevoTablero= new Tablero();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -45,18 +55,43 @@ public class Pantalla_NuevaPartida extends javax.swing.JDialog {
         jLabel2.setText("Jugadores");
 
         jToggleButton1.setText("Regresar");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         jToggleButton2.setText("Continuar");
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
 
         jToggleButton3.setText("10X10");
+        jToggleButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("2 jugadores");
 
         jToggleButton4.setText("15X15");
+        jToggleButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton4ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("3 Jugadores");
 
         jToggleButton5.setText("20X20");
+        jToggleButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton5ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("4 Jugadores");
 
@@ -126,6 +161,28 @@ public class Pantalla_NuevaPartida extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
+        nuevoTablero.setColumnas(it.setTamTablero(0));
+    }//GEN-LAST:event_jToggleButton3ActionPerformed
+
+    private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
+        nuevoTablero.setColumnas(it.setTamTablero(1));
+    }//GEN-LAST:event_jToggleButton4ActionPerformed
+
+    private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
+        nuevoTablero.setColumnas(it.setTamTablero(2));
+    }//GEN-LAST:event_jToggleButton5ActionPerformed
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        getParent().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        Pantalla_SalaDeEspera sal= new Pantalla_SalaDeEspera();
+        sal.setVisible(true);
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
 
  
 

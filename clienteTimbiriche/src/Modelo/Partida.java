@@ -17,6 +17,18 @@ public class Partida{
     private int jugadoresListos;
     private Tablero tablero;
     
+    public Partida(){
+        
+    }
+
+    public Partida(ArrayList<Jugador> jugadores, int jugadoresListos, Tablero tablero) {
+        this.jugadores = jugadores;
+        this.jugadoresListos = jugadoresListos;
+        this.tablero = tablero;
+    }
+    
+    
+    
     public boolean iniciarJuego(){
         return jugadoresListos==jugadores.size();
     }

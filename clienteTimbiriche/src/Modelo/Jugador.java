@@ -16,12 +16,16 @@ public class Jugador {
     private Color color;
     private int puntuacion;
 
-    public Jugador(String nombre) {
+    public Jugador(String nombre,Color color) {
         this.nombre = nombre;
         this.color = color;
         this.puntuacion = 0;
     }
 
+    public Jugador(String nombre) {
+        this.nombre = nombre;
+    }
+    
     public String getNombre() {
         return nombre;
     }

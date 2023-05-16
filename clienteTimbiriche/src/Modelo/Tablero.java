@@ -14,13 +14,17 @@ public class Tablero {
 
     private int filas;
     private int columnas;
-    private int[][] jugadas;
+    private int jugadas[][];
     boolean cuadroCompleto;
 
     public Tablero(int filas, int columnas) {
         this.filas = filas;
         this.columnas = columnas;
         jugadas = new int[filas][columnas];
+    }
+
+    public Tablero() {
+        
     }
 
 
@@ -45,4 +49,15 @@ public class Tablero {
     public int getColumnas() {
         return columnas;
     }
+
+    public void setFilas(int filas) {
+        this.filas = filas;
+    }
+
+    public void setColumnas(int columnas) {
+        this.columnas = columnas;
+    }
+    
+    
+    
 }

@@ -8,13 +8,12 @@ package Vista;
  *
  * @author Jesus
  */
-public class Pantalla_Inicio extends javax.swing.JDialog {
+public class Pantalla_Inicio extends javax.swing.JFrame {
 
     /**
      * Creates new form Pantalla_Inicio
      */
-    public Pantalla_Inicio(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public Pantalla_Inicio() {
         initComponents();
     }
 
@@ -33,8 +32,18 @@ public class Pantalla_Inicio extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jToggleButton1.setText("Nueva Partida");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         jToggleButton2.setText("Unirse a partida");
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,6 +71,18 @@ public class Pantalla_Inicio extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        Pantalla_NuevaPartida np= new Pantalla_NuevaPartida(this, false);
+        np.setVisible(true);
+        
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        Pantalla_UnirsePartida pup= new Pantalla_UnirsePartida(this,false);
+        pup.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
 
   
 
